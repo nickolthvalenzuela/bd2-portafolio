@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>Base de Datos II</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header>
+    <div class="logo">
+    <img src="foto upla/WhatsApp Image 2026-04-13 at 00.47.30.jpeg" alt="logo">
+    <div>
+        <h3>Ingeniería de Sistemas</h3>
+        <p>Base de Datos II</p>
+    </div>
+</div>
+
+    <nav>
+        <a onclick="cambiarSeccion('inicio')">Inicio</a>
+        <a onclick="cambiarSeccion('sobre')">Sobre mí</a>
+        <a onclick="cambiarSeccion('trabajos')">Trabajos</a>
+        <a onclick="cambiarSeccion('login')">Iniciar sesión</a>
+    </nav>
+
+    <div class="perfil">
+        <img src="img/perfil.jpg">
+        <span>Nombre : nickolth valenzuela vera 
+    </div>
+</header>
+
+<!-- SECCIONES -->
+
+<section id="inicio" class="seccion activa">
+    <div class="hero">
+        <h1>Base de <span>Datos II</span></h1>
+        <p>Portafolio conectado con GitHub</p>
+    </div>
+</section>
+
+<section id="sobre" class="seccion">
+    <div class="card grande">
+        <img src="foto/WhatsApp Image 2026-01-22 at 22.06.21 (1).jpeg" class="foto">
+        <h2<span>Nickolth del Rugby Valenzuela Vera
+        <p>Hola mi nombre es Nickolth del rubby Valenzuela Vera  y soy una apasionada 
+            <p>estudiante. de Ingeniería de Sistemas en la Universidad Peruana Los Andes (UPLA).</p>
+            <p>Actualmente, me encuentro cursando la asignatura de Base de Datos </p>
+            <p>Me considero una persona creativa y dedicada, enfocada 
+            en aplicar la tecnología para resolver problemas complejos y optimizar procesos en el mundo digitalII</p>
+    </div>
+</section>
+
+<section id="trabajos" class="seccion">
+
+    <div class="tabs">
+        <button onclick="mostrarUnidad('unidad01')" class="activo">Unidad01</button>
+        <button onclick="mostrarUnidad('unidad02')">Unidad02</button>
+        <button onclick="mostrarUnidad('unidad03')">Unidad03</button>
+        <button onclick="mostrarUnidad('unidad04')">Unidad04</button>
+    </div>
+
+    <div id="contenedor-semanas"></div>
+
+</section>
+
+<section id="login" class="seccion">
+    <div class="card grande">
+        <h2>Iniciar Sesión</h2>
+        <input type="text" placeholder="Usuario">
+        <input type="password" placeholder="Contraseña">
+        <button>Ingresar</button>
+    </div>
+</section>
+
+<script src="script.js"></script>
+</body>
+</html>
